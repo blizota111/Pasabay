@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pasabay Delivery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/Pasabay.png" alt="Pasabay Logo" />
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Fast, Reliable, and Affordable</h1>
+        <p>Your trusted delivery partner — Pasabay</p>
+      </div>
+    </section>
+    <section class="section search">
+      <h2>Search for What You Need</h2>
+      <form class="search-form">
+        <input
+          type="text"
+          placeholder="Search restaurant, store, dishes or cuisines..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="section restaurants">
+      <h2>Our Partner Restaurants & Menus</h2>
+      <div class="restaurants-grid">
+        <div class="restaurant">
+          <img src="images/jollibee-menu.png" alt="Jollibee Menu" />
+          <p>Jollibee</p>
+          <div id="restaurant-modal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3 id="restaurant-name">Restaurant Name</h3>
+              <ul id="menu-list">
+                <li>Chickenjoy - ₱150</li>
+                <li>Yumburger - ₱60</li>
+                <li>Spaghetti - ₱80</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="restaurant">
+          <img src="images/mcdonalds-menu.png" alt="McDonald’s Menu" />
+          <p>McDonald's</p>
+          <div id="restaurant-modal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3 id="restaurant-name">Restaurant Name</h3>
+              <ul id="menu-list">
+                <li>Chicken Mcdo - ₱150</li>
+                <li>Burger Mcdo - ₱60</li>
+                <li>McSpaghetti - ₱80</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="restaurant">
+          <img src="images/manginasal-menu.webp" alt="Mang Inasal Menu" />
+          <p>Mang Inasal</p>
+          <div id="restaurant-modal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3 id="restaurant-name">Restaurant Name</h3>
+              <ul id="menu-list">
+                <li>Pork Sisig - ₱99</li>
+                <li>Chicken Inasal regular - ₱99</li>
+                <li>Pork BBQ - ₱99</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">Same-day Delivery</div>
+        <div class="card">Scheduled Pickups</div>
+        <div class="card">Cash on Delivery</div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About Pasabay</h2>
+      <p>
+        Pasabay is a fast-growing delivery service in the Philippines committed
+        to bringing your packages on time, every time. Whether you're sending
+        food, parcels, or personal items — we deliver with care and speed.
+      </p>
+    </section>
+    <section class="section cuisines">
+      <h2>Your Favorite Cuisines</h2>
+      <div class="filter-buttons">
+        <button onclick="filterCuisine('Pizza')">Pizza</button>
+        <button onclick="filterCuisine('Chicken')">Chicken</button>
+        <button onclick="filterCuisine('')">Show All</button>
+      </div>
+      <div class="cuisine-grid">
+        <div class="cuisine">
+          <img src="images/pizza.png" alt="Pizza" />
+          <p>Pizza</p>
+        </div>
+        <div class="cuisine">
+          <img src="images/Chicken.jpg" alt="Chicken" />
+          <p>Chicken</p>
+        </div>
+        <div class="cuisine">
+          <img src="images/cakes.jpg" alt="Cakes" />
+          <p>Cakes</p>
+        </div>
+        <div class="cuisine">
+          <img src="images/milktea.jpg" alt="Milk Tea" />
+          <p>Milk Tea</p>
+        </div>
+        <div class="cuisine">
+          <img src="images/pasta.png" alt="Pasta" />
+          <p>Pasta</p>
+        </div>
+        <div class="cuisine">
+          <img src="images/burgers.webp" alt="Burgers" />
+          <p>Burgers</p>
+        </div>
+        <div class="cuisine">
+          <img src="images/donuts.png" alt="Donuts" />
+          <p>Donuts</p>
+        </div>
+      </div>
+    </section>
+    <section class="section partners">
+      <h2>Our Partners</h2>
+      <div class="partner-logos">
+        <div class="partner">
+          <img src="images/jollibee.png" alt="Jollibee" />
+        </div>
+        <div class="partner">
+          <img src="images/mcdonalds.png" alt="McDonald's" />
+        </div>
+        <div class="partner">
+          <img src="images/manginasal.png" alt="Mang Inasal" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Pasabay. All rights reserved.</p>
+        <div class="social-icons">
+          <a
+            href="https://facebook.com/pasabay"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://instagram.com/pasabay"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com/pasabay"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://youtube.com/@pasabay"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://tiktok.com/@pasabay"
+            target="_blank"
+            aria-label="TikTok"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+      <div class="cart-popup" id="cart">
+        <h4>Your Cart</h4>
+        <ul>
+          <li>Chickenjoy - ₱150</li>
+          <li>Fries - ₱60</li>
+        </ul>
+        <p>Total: ₱210</p>
+      </div>
+    </footer>
+    <div id="restaurant-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="restaurant-name">Restaurant Name</h3>
+        <ul id="menu-list">
+          <li>Loading...</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("nav");
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
